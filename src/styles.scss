@@ -1,0 +1,151 @@
+@import '~normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// Style global
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Couleurs
+$primary-color: 111,
+30,
+81;
+$secondary-color: 224,
+123,
+189;
+$tertiary-colo: 0,
+0,
+0;
+
+:root {
+  --primary-color: rgb(111, 30, 81); // rgba(111, 30, 81, 1) #6F1E51
+  --primary-color-accent: rgb(131, 52, 113); // rgba(131, 52, 113, 1) #833471
+  --secondary-color: rgb(224, 123, 189); // rgba(224, 123, 189, 1) #E07BBD
+  --secondary-color-accent: rgba(253, 167, 223); // rgba(253, 167, 223, 1 )#FDA7DF
+  --tertiary-color: #000; // rgba(0, 0, 0, 1)
+  --white: #FFF; // rgba(255, 255, 255, 1)
+}
+
+.primary-100 {
+  color: rgba(111, 30, 81, 1);
+}
+
+.primary-75 {
+  color: rgba(111, 30, 81, 0.75);
+}
+
+.primary-50 {
+  color: rgba(111, 30, 81, 0.5);
+}
+
+.primary-25 {
+  color: rgba(111, 30, 81, 0.25);
+}
+
+.secondary-100 {
+  color: rgba(224, 123, 189, 1);
+}
+
+.secondary-75 {
+  color: rgba(224, 123, 189, 0.75);
+}
+
+.secondary-50 {
+  color: rgba(224, 123, 189, 0.5);
+}
+
+.secondary-25 {
+  color: rgba(224, 123, 189, 0.25);
+}
+
+.tertiary-100 {
+  color: hsl(0, 0%, 0%);
+}
+
+.tertiary-75 {
+  color: hsl(0, 0%, 25%);
+}
+
+.tertiary-50 {
+  color: hsl(0, 0%, 50%);
+}
+
+.tertiary-25 {
+  color: hsl(0, 0%, 75%);
+}
+
+// Bordures
+.border-primary-100 {
+  border: 1px solid rgba(111, 30, 81, 1);
+}
+
+.border-primary-75 {
+  border: 1px rgba(111, 30, 81, 0.75);
+}
+
+.border-primary-50 {
+  border: 1px solid rgba(111, 30, 81, 0.5);
+}
+
+.border-primary-25 {
+  border: 1px solid rgba(111, 30, 81, 0.25);
+}
+
+.border-secondary-100 {
+  border: 1px solid rgba(224, 123, 189, 1);
+}
+
+.border-secondary-75 {
+  border: 1px rgba(224, 123, 189, 0.75);
+}
+
+.border-secondary-50 {
+  border: 1px solid rgba(224, 123, 189, 0.5);
+}
+
+.border-secondary-25 {
+  border: 1px solid rgba(224, 123, 189, 0.25);
+}
+
+.border-tertiary-100 {
+  border: 1px solid hsl(0, 0%, 0%);
+}
+
+.border-tertiary-75 {
+  border: 1px hsl(0, 0%, 25%);
+}
+
+.border-tertiary-50 {
+  border: 1px solid hsl(0, 0%, 50%);
+}
+
+.border-tertiary-25 {
+  border: 1px solid hsl(0, 0%, 75%);
+}
+
+// Elements
+button {
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  margin: 20px;
+  padding: 8px 20px;
+
+  &:hover {
+    border: none;
+    background-color: var(--primary-color-accent);
+  }
+}
