@@ -9,6 +9,14 @@ export class ProjectsComponent implements OnInit {
 
   public projects = [
     {
+      titre: 'Extranet',
+      type: 'Extranet immobilier',
+      legende: '',
+      description: '',
+      technos: ['Angular 9', 'SCSS', 'Zend Framework 2', 'MySQL', 'Docker'],
+      date: '30/06/2021'
+    },
+    {
       titre: 'Portfolio 1.0',
       type: 'Présentation de projets',
       legende: '',
